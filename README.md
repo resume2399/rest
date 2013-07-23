@@ -1,4 +1,4 @@
-rest
-====
+Developing REST Style WebServices
+=================================
 
-RESTful webservices
+This repository contains sample apps demonstarting RESTful webservices development. 
