@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.sivalabs.jaxrsdemo.resources.HelloService;
+
 
 public class HelloServiceTest 
 {

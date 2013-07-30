@@ -1,4 +1,4 @@
-package com.sivalabs.javaeerest;
+package com.sivalabs.jaxrsdemo.config;
 
 /*import java.util.Arrays;
 import java.util.HashSet;
