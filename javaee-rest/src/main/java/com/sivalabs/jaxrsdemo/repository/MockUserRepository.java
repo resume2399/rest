@@ -13,18 +13,18 @@ import com.sivalabs.jaxrsdemo.domain.User;
  * @author Siva
  *
  */
-public class UserRepository
+public class MockUserRepository
 {
 	private static Map<Integer, User> USERS_TABLE = new HashMap<Integer, User>();
 	private static AtomicInteger ID = new AtomicInteger(3);
-	private UserRepository()
+	private MockUserRepository()
 	{
 	}
 	static
 	{
 		for (int i = 1; i <= 3; i++)
 		{
-			User user = new User(i, "User"+i, "user"+i+"@gmail.com", new Date());
+			User user = new User(i, "User"+i, "user"+i+"@gmail.com","UserP"+i, new Date());
 			USERS_TABLE.put(user.getId(), user);
 		}
 		
