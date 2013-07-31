@@ -1,4 +1,4 @@
-package com.sivalabs.javaeerest;
+package com.sivalabs.jaxrsdemo.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -21,4 +21,5 @@ public class HelloService
         logger.debug("Name : {}", name);
     	return "Hello "+name;
     }
+	
 }
