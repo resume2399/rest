@@ -30,5 +30,21 @@
         <param-value>true</param-value>
     </context-param>
  -->
-
+ 
+	<!-- 
+	<data-source>
+	    <name>java:app/myDS</name>
+	    <class-name>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</class-name>
+	    <server-name>localhost</server-name>
+	    <database-name>test</database-name>
+	    <user>root</user>
+	    <password>admin</password>
+	    <transactional>true</transactional>
+	    <isolation-level>TRANSACTION_READ_COMMITTED</isolation-level>
+	    <initial-pool-size>2</initial-pool-size>
+	    <max-pool-size>10</max-pool-size>
+	    <min-pool-size>5</min-pool-size>
+	    <max-statements>0</max-statements>
+	</data-source>
+	 -->
 </web-app>

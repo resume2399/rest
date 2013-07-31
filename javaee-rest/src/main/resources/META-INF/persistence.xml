@@ -8,7 +8,9 @@
   
    <!-- <jta-data-source>java:/jdbc/MySQLTestDS</jta-data-source> -->
   	
-  	<jta-data-source>mysqltest</jta-data-source>
+  <!-- 	<jta-data-source>mysqltest</jta-data-source> -->
+  	
+  	<jta-data-source>java:app/myDS</jta-data-source>
   	
     <properties>
 	  <!-- Hibernate Properties -->

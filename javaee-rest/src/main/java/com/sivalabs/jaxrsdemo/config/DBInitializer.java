@@ -3,6 +3,7 @@ package com.sivalabs.jaxrsdemo.config;
 import java.util.Date;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.sql.DataSourceDefinition;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.persistence.EntityManager;
@@ -20,6 +21,14 @@ import com.sivalabs.jaxrsdemo.domain.User;
  */
 @Singleton
 @Startup
+@DataSourceDefinition(
+	 name = "java:app/myDS",
+     className = "com.mysql.jdbc.jdbc2.optional.MysqlXADataSource",
+     portNumber = 3306,
+     serverName = "localhost",
+     databaseName = "test",
+     user = "root",
+     password = "admin")
 public class DBInitializer
 {
 	
@@ -27,6 +36,8 @@ public class DBInitializer
 	
 	@PersistenceContext
 	private EntityManager em;
+	
+	
 	
 	@PostConstruct
 	void init()
